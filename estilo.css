@@ -1,16 +1,156 @@
 /* CSS Externo */
 
+/* Definir as cores Tema Dark */
+/* raiz */
+:root,
+:root[data-theme='dark'] {
+    --cor-fundo: #1b1b1b;
+    --cor-texto: #e9e9e9;
+    --menu-link: rgb(174, 233, 233);
+
+    --cor-borda: #e9e9e9;
+}
+/* Fundo Branco */
+:root[data-theme='light'] {
+
+    --cor-fundo: #e9e9e9;
+    --cor-texto: #1b1b1b;
+    --menu-link: rgb(7, 79, 79);
+
+    --cor-borda: #1b1b1b;
+
+}
+
 body {
-    background: rgb(255, 187, 198); /* cor fundo  */
-    color:rgb(240, 240, 240) ; /* cor TEXTOS */
+    background: var(--cor-fundo); /* cor fundo  */
+    color: var(--cor-texto); /* cor TEXTOS */
     font-family: 'Courier New', Courier, monospace;
 }
 
 a {
-    color: #e9e9e9;
+    color:var(--menu-link);
     text-decoration: none;
 }
 
 ul {
     list-style: none;/* Estilo de Lista */
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgb(30, 250, 206);
+    border-bottom: var(--cor-borda);
+
+}
+
+.menu-desktop{
+    background: rgb(255, 0, 144);
+    display: none;
+    /* esconde o menu desktop */
+}
+/* NAV */
+.menu {
+    display: flex; /* em linha // horizontal */
+    gap: 1rem; /* 16px */
+    align-items: center;
+}
+
+/* LI = listas */
+.menu-item {
+    width: 100%; 
+}
+
+.menu-link{
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+    color: var(--menu-item);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* -----Menu Hamburger
+botao menu mobile
+----- */
+
+#menuHamburger{
+    margin-left: 1rem;
+}
+
+.btn-menu-mobile {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-texto);
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.menu-mobile { /* NAV */
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--cor-fundo);
+    width: 75%;
+    height: 100vh; /* viewPort Altura */
+    border-left: 1px solid var(--cor-borda);
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    transition: .3s ease-in-out;
+    transform: translateX(100%);
+
+}
+
+/* Ativar o Menu Mobile */
+.menu-mobile.active {
+    transform: translateX(0%);
+}
+
+.menu-mobile /* NAV */
+.menu-list /* UL */ {
+    display: flex;
+    flex-direction: column; /* EIXO = Vertical */
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem 1rem 2rem;
+}
+
+.menu-mobile .menu-item {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-mobile .menu-link {
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+
+}
+
+/* Medidas Responsivas */
+@media (min-width: 768px) {
+      
+      .menu-desktop {
+        display: flex;
+        min-width: 30%;
+      }
+
+      .btn-menu-mobile {
+        display: none;
+      }
+      .header-toggle {
+        min-width: 30%;
+      }
+}
+
+

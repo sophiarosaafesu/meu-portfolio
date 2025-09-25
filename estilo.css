@@ -35,6 +35,7 @@ html[data-theme='light'] .logo {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -170,11 +171,24 @@ botao menu mobile
 }
 
 #home {
-    padding: 2.5rem 1rem;
+    padding: 4.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
+
       
       .menu-desktop {
         display: flex;
@@ -185,9 +199,33 @@ botao menu mobile
         display: none;
       }
       .header-toggle {
-        min-width: 30%;
+        min-width: 30%; /* alinhar o logo */
       }
+
+      header {
+        padding: 1rem 6rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      #home {
+        padding: 8rem 6rem 4rem 6rem;
+      }
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+} /* FIM min 768px */
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 6.5rem;
+    }
 }
+
 
 
 

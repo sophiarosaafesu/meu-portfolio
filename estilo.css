@@ -6,7 +6,7 @@
 :root[data-theme='dark'] {
     --cor-fundo: #1b1b1b;
     --cor-texto: #e9e9e9;
-    --menu-link: rgb(0, 0, 0);
+    --menu-link: #ffffff;
 
     --cor-borda: #ff00a2;
     --cor-header:#8af0d6;
@@ -17,7 +17,7 @@
 
     --cor-fundo: #ffffff;
     --cor-texto: #1b1b1b;
-    --menu-link: rgb(208, 222, 222);
+    --menu-link: rgb(0, 0, 0);
 
     --cor-borda: #00fbff;
     --cor-header:#ff9fc7;
@@ -230,6 +230,17 @@ h1 {
     gap: 4rem;
 }
 
+.servico-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -266,6 +277,17 @@ h1 {
         align-items: flex-start;
       }
 } /* FIM min 768px */
+
+@media (min-width: 992px) {
+    .servico-card {
+        flex-direction: row;
+    }
+    .img-card {
+        width: 55%;
+    }
+
+
+}
 
 @media (min-width: 1400px) {
     h1 {

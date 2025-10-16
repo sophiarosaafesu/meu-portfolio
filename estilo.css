@@ -1,3 +1,7 @@
+/* Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 /* CSS Externo */
 
 /* Definir as cores Tema Dark */
@@ -185,11 +189,29 @@ botao menu mobile
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Tinos", serif;
 }
 
+h2{
+    font-family: "Tinos", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h3 {
+    font: 1.55rem;
+    font-family: "Tinos", serif;
+    font-weight: bold;
+    font-style: italic;
+}
 .video iframe {
     aspect-ratio: 16/9;
+    font-family: "Tinos", serif;
 }
+
 
    #home,
    .servicos,
@@ -276,6 +298,7 @@ h1 {
 /* Medidas Responsivas */
 @media (min-width: 768px) {
 
+
       
       .menu-desktop {
         display: flex;
@@ -295,6 +318,14 @@ h1 {
 
       h1 {
         font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
       }
 
       #home, 
@@ -323,9 +354,23 @@ h1 {
 
 }
 
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.5rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem;
     }
 
     .descricao-video,

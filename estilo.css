@@ -15,6 +15,13 @@
     --cor-borda: #ff00a2;
     --cor-header:#8af0d6;
     --cor-icone:#ffffff;
+
+    --cor-hover-icone: #bd2db1;
+
+    
+
+    
+
 }
 /* Fundo Branco */
 :root[data-theme='light'] {
@@ -26,6 +33,11 @@
     --cor-borda: #00fbff;
     --cor-header:#ff9fc7;
     --cor-icone:#000000;
+
+     --cor-hover-icone: #36caaa;
+
+    
+
 
 }
 
@@ -306,6 +318,22 @@ h3 {
         padding-top: 8rem;
     }
 }
+
+.card-item{
+    margin-right: 8px;
+}
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: .5s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.4rem;
+}
+
+
+
+
 
 @media (min-width: 768px) {
 

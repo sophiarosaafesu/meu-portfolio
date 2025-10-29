@@ -18,9 +18,9 @@
 
     --cor-hover-icone: #bd2db1;
     --cor-hover-github: #6e7781;
-    --cor-hover-instagram:#ff00dd;
-    --cor-hover-whatsapp: #91ff00;
-    --cor-hover-facebook: #03fdf1;
+    --cor-hover-instagram:#E472C4;
+    --cor-hover-whatsapp: #6EF3A3;
+    --cor-hover-facebook: #6DA9FF;
 
     
 
@@ -39,10 +39,10 @@
     --cor-icone:#000000;
 
      --cor-hover-icone: #36caaa;
-     --cor-hover-github: #ab00df;
-     --cor-hover-instagram: #10f3f3;
-     --cor-hover-whatsapp: #00ff22;
-     --cor-hover-facebook: #00ffea;
+     --cor-hover-github: #0D1117;
+     --cor-hover-instagram: #833AB4;
+     --cor-hover-whatsapp: #128C7E;
+     --cor-hover-facebook: #0E5A8A;
      
 
     
@@ -354,12 +354,20 @@ h3 {
     transition: .5s ease-in-out;
 }
 
-.col6 {
-    background-color: pink;
+.col1 {
+    background-color: rgb(2, 255, 179);
 }
 
-.col5 {
+.col2 {
     background-color: purple;
+}
+
+.col3 {
+    background-color: #833AB4;
+}
+
+.col4 {
+    background-color: #e100ff;
 }
 
 /* Medidas Responsivas */

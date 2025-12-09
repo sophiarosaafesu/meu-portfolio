@@ -65,6 +65,8 @@ html[data-theme='light'] .logo {
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
+
 }
 
 body {
@@ -354,21 +356,32 @@ h3 {
     transition: .5s ease-in-out;
 }
 
-.col1 {
-    background-color: rgb(2, 255, 179);
+/* Sobre */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.col2 {
-    background-color: purple;
+/* FOTO Rentangular */
+.sobre-logo {
+    width: 100%;
+    /* NAO PRECISA se for Quadrado */
+    aspect-ratio: 1 / 1; /* Ficar Quadrado */
+    object-fit: cover;
+    border-radius: 50%;
+    /* Borda com cor fixa 
+    border: 2px solid red; */
+    border: 2px solid var(--cor-borda);
 }
 
-.col3 {
-    background-color: #833AB4;
+.sobre-descricao p {
+    text-align: justify;
+    font-size: 1.8rem;
 }
 
-.col4 {
-    background-color: #e100ff;
-}
+
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
